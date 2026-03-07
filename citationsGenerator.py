@@ -4,7 +4,9 @@ from datetime import datetime
 
 url = "https://zenquotes.io/api/random"
 print("\n--- Welcome to MotivZen 🍃 ---\n")
-filePath = input(r"Enter the path where you want to save the citation:\n ")
+filePath = input(r"(Optional) Enter the path where you want to save the citation:\n ")
+if filePath == "":
+    filePath = "citations"
 
 def get_quote():
     response = requests.get(url)
