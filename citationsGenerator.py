@@ -27,7 +27,7 @@ def download(content):
         print(f"File created\n")
 try:
     while True:
-        print("--- Welcome to MotivZen 🛡️ ---\n")
+        print("--- Welcome to MotivZen 🍃 ---\n")
         option = input("Do you want a quote? (Y/N): ").upper()
 
         if option == "Y":
