@@ -27,7 +27,7 @@ def download(content):
     
     with open(fullPath, 'w', encoding='utf-8') as file:
         file.write(content)
-        print(f"File created\n")
+        print(f"File created: {fullPath}")
 try:
     while True:
         option = input("\nGenerate a quote? (Y/N): ").upper()
