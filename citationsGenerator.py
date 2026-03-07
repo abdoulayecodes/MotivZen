@@ -3,7 +3,8 @@ import os
 from datetime import datetime
 
 url = "https://zenquotes.io/api/random"
-filePath = r'C:\Users\niizu\Documents\Dev\Python\LearnPy\Projects\citations'
+print("\n--- Welcome to MotivZen 🍃 ---\n")
+filePath = input(r"Enter the path where you want to save the citation:\n ")
 
 def get_quote():
     response = requests.get(url)
@@ -27,7 +28,6 @@ def download(content):
         print(f"File created\n")
 try:
     while True:
-        print("--- Welcome to MotivZen 🍃 ---\n")
         option = input("Generate a quote? (Y/N): ").upper()
 
         if option == "Y":
