@@ -4,7 +4,7 @@ from datetime import datetime
 
 url = "https://zenquotes.io/api/random"
 print("\n--- Welcome to MotivZen 🍃 ---\n")
-filePath = input(r"(Optional) Enter the path where you want to save the citation:\n ")
+filePath = input(r"(Optional) Enter the path where you want to save the citation: ")
 if filePath == "":
     filePath = "citations"
 
@@ -14,7 +14,7 @@ def get_quote():
         data = response.json()
         return f"{data[0]['q']} \n-{data[0]['a']}"
     else:
-        print("Error: couldn't connect to API")
+        print("\nError: couldn't connect to API")
         return None
 
 def download(content):
@@ -30,7 +30,7 @@ def download(content):
         print(f"File created\n")
 try:
     while True:
-        option = input("Generate a quote? (Y/N): ").upper()
+        option = input("\nGenerate a quote? (Y/N): ").upper()
 
         if option == "Y":
             quote = get_quote()
@@ -38,9 +38,9 @@ try:
                 print(f"\n{quote}\n")
                 download(quote)
         elif option == "N" or option == "":
-            print("Goodbye!")
+            print("\nGoodbye!")
             break
         else:
-            print("Invalid option, please type Y or N.")
+            print("\nInvalid option, please type Y or N.")
 except KeyboardInterrupt:
     print("\nGoodbye!")
