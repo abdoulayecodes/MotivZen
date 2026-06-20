@@ -9,7 +9,7 @@
 
 ### 🛠️ Tech Stack
 - **Language:** Python 3.10+
-- **API:** [ZenQuotes.io](https://zenquotes.io/)
+- **API:** https://zenquotes.io/
 - **Libraries:** - `requests`: Handling HTTP protocols and API responses.
   - `os`: Managing dynamic directory creation and file paths.
   - `datetime`: Implementing granular timestamping for data versioning.
@@ -23,7 +23,7 @@
 ### 📂 Installation & Setup
 ```bash
 # 1. Clone the repository
-git clone [https://github.com/AbdoulayeSowX/MotivZen.git](https://github.com/AbdoulayeSowX/MotivZen.git)
+git clone https://github.com/abdoulayecodes/MotivZen.git
 
 # 2. Enter the directory
 cd MotivZen
